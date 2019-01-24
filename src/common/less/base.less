@@ -1,0 +1,57 @@
+body,html{
+    line-height: 1;
+    font-weight: 200;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    color: #333;
+    font-size: 14px;
+}
+
+.clearfix{
+    display: block;
+    &::after{
+        display: block;
+        content: "";
+        height: 0;
+        line-height: 0px;
+        clear: both;
+        visibility: hidden;
+    }
+}
+@media (-webkit-min-device-pixel-ratio:1.5),(min-device-pixel-ratio:1.5){
+    .border-1px{
+        &::after{
+            -webkit-transform:scaleY(0.7);
+            transform: scaleY(0.7);
+        }
+    }
+}
+@media (-webkit-min-device-pixel-ratio:2),(min-device-pixel-ratio:2){
+    .border-1px{
+        &::after{
+            -webkit-transform:scaleY(0.5);
+            transform: scaleY(0.5);
+        }
+    }
+}
+.w-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.red{
+    color: #ff2626;
+}
+.orange{
+    color: #fb8924;
+}
+.m-b20{
+    margin-bottom: 20px;
+}
+.m-b30{
+    margin-bottom: 30px;
+}
